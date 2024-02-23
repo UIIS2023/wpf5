@@ -1,0 +1,20 @@
+﻿<Window x:Class="Bioskop.Sala"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bioskop"
+        mc:Ignorable="d"
+        Title="Sala" Height="200" Width="300">
+    <Grid x:Name="frmSala">
+        <Grid.Background>
+            <ImageBrush Stretch="None" ImageSource="C:\Users\Marko\Desktop\pozadinaZaposleniii.jpg" AlignmentY="Center" AlignmentX="Center"/>
+
+        </Grid.Background>
+        <Label x:Name="lblKapacitet" Foreground="DarkBlue" FontWeight="Bold" Content="Kapacitet:&#xD;&#xA;" HorizontalAlignment="Left" Margin="35,50,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtKapacitet" Foreground="DarkBlue" Background="LightGray" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Margin="100,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160" Height="26"/>
+        <Button x:Name="btnSacuvaj" Content="Sacuvaj&#xA;" HorizontalAlignment="Left" Margin="40,117,0,0" VerticalAlignment="Top" Height="25" Width="80" FontWeight="Bold" FontSize="15" Click="btnSacuvaj_Click"/>
+        <Button x:Name="btnOtkazi" Content="Otkazi" HorizontalAlignment="Left" Margin="180,117,0,0" VerticalAlignment="Top" Height="25" Width="80" FontWeight="Bold" FontSize="15" Click="btnOtkazi_Click"/>
+
+    </Grid>
+</Window>

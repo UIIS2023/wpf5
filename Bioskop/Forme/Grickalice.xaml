@@ -1,0 +1,24 @@
+﻿<Window x:Class="Bioskop.Grickalice"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bioskop"
+        mc:Ignorable="d"
+        Title="Grickalice" Height="300" Width="450">
+    <Grid x:Name="frmGrickalice">
+        <Grid.Background>
+            <ImageBrush Stretch="None" ImageSource="C:\Users\Marko\Desktop\pozadinaZaposleniii.jpg" AlignmentY="Center" AlignmentX="Right"/>
+
+        </Grid.Background>
+        
+        <Image Source="C:\Users\Marko\Desktop\pozadinaGrickalice.png" Margin="194,27,-97,136" Opacity="0.8"/>
+        <Label x:Name="lblNaziv" Content="Naziv:&#xD;&#xA;"  FontWeight="Bold" Foreground="DarkBlue" HorizontalAlignment="Left" Margin="61,55,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblCena" Content="Cena:&#xD;&#xA;"  FontWeight="Bold" Foreground="DarkBlue" HorizontalAlignment="Left" Margin="64,116,0,0" VerticalAlignment="Top" Height="32" Width="47"/>
+        <TextBox x:Name="txtNaziv" Foreground="DarkBlue" BorderBrush="Black" BorderThickness="1" Background="LightGray" HorizontalAlignment="Left" Margin="105,59,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="179" Height="23"/>
+        <TextBox x:Name="txtCena" Foreground="DarkBlue" BorderBrush="Black" BorderThickness="1" Background="LightGray" HorizontalAlignment="Left" Margin="105,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="179" Height="22"/>
+        <Button x:Name="btnSacuvaj" Content="Sacuvaj" HorizontalAlignment="Left" Margin="64,201,0,0" VerticalAlignment="Top" Click="btnSacuvaj_Click" Width="80" Height="25" FontSize="15"  FontWeight="Bold"/>
+        <Button x:Name="btnOtkazi" Content="Otkazi" HorizontalAlignment="Left" Margin="204,202,0,0" VerticalAlignment="Top" Click="btnOtkazi_Click" Width="80" Height="24" FontSize="15"  FontWeight="Bold"/>
+
+    </Grid>
+</Window>

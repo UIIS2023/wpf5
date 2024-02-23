@@ -1,0 +1,62 @@
+﻿<Window x:Class="Bioskop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bioskop"
+        mc:Ignorable="d"
+        Title="Naslov" Height="350" Width="700" ResizeMode="NoResize">
+  
+    <Grid>
+
+
+        <Grid.Background>
+            <ImageBrush Stretch="None" ImageSource="C:\Users\Marko\Desktop\pozadinaAplikacija.jpg" AlignmentY="Top" AlignmentX="Center"/>
+        </Grid.Background>
+        <DataGrid  Name="dataGridCentralni" HorizontalAlignment="Center" VerticalAlignment="Center" Height="auto" Width="auto" IsReadOnly="True"
+                   CanUserAddRows="False" SelectionUnit="FullRow" SelectionMode="Single" RowHeight="22"  >
+        
+            <DataGrid.CellStyle>
+                <Style TargetType="DataGridCell">
+                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="Background" Value="DarkBlue"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Background" Value="WhiteSmoke"/>
+                            <Setter Property="Foreground" Value="DarkBlue"/>
+                        </Trigger>
+
+                    </Style.Triggers>
+                </Style>
+                
+            </DataGrid.CellStyle>
+           
+        </DataGrid>
+                <StackPanel HorizontalAlignment="Center" Height="30"  VerticalAlignment="Top" Width="auto" Orientation="Horizontal">
+            <Button x:Name="btnKarta" Content="Karta" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="85" Click="btnKarta_Click" Background="DarkBlue" Foreground="White" BorderBrush="Black" BorderThickness="2" FontSize="14"
+                    FontWeight="Bold" Cursor="Hand" />
+            <Button x:Name="btnZaposleni" Content="Zaposleni" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="85" Click="btnZaposleni_Click" Background="DarkBlue" Foreground="White" BorderBrush="Black" BorderThickness="2"
+                    FontSize="14" FontWeight="Bold" Cursor="Hand"/>
+            <Button x:Name="btnGrickalice" Content="Grickalice" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="85" Click="btnGrickalice_Click" Background="DarkBlue" Foreground="White" BorderBrush="Black" BorderThickness="2"
+                    FontSize="14" FontWeight="Bold" Cursor="Hand"/>
+            <Button x:Name="btnGledalac" Content="Gledalac" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="85" Click="btnGledalac_Click" Background="DarkBlue" Foreground="White" BorderBrush="Black" BorderThickness="2"
+                    FontSize="14" FontWeight="Bold" Cursor="Hand"/>
+            <Button x:Name="btnSala" Content="Sale" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="85" Click="btnSala_Click" Background="DarkBlue" Foreground="White" BorderBrush="Black" BorderThickness="2" FontSize="14" 
+                    FontWeight="Bold" Cursor="Hand"/>
+            <Button x:Name="btnFilm" Content="Film" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="85" Click="btnFilm_Click" Background="DarkBlue" Foreground="White" BorderBrush="Black" BorderThickness="2" FontSize="14" 
+                    FontWeight="Bold" Cursor="Hand"/>
+            <Button x:Name="btnProjekcija" Content="Projekcije" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="85" Click="btnProjekcija_Click" Background="DarkBlue" Foreground="White" BorderBrush="Black" BorderThickness="2" 
+                    FontSize="14" FontWeight="Bold" Cursor="Hand"/>
+            <Button x:Name="btnPrikazivanje" Content="Prikazivanje" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="85" Click="btnPrikazivanje_Click" Background="DarkBlue" Foreground="White" BorderBrush="Black" BorderThickness="2" 
+                    FontSize="14" FontWeight="Bold" Cursor="Hand"/>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Center" Height="30"  VerticalAlignment="Bottom" Width="360" Orientation="Horizontal">
+            <Button x:Name="btnDodaj" Content="Dodaj" Width="120" Click="btnDodaj_Click" Background="DarkBlue" Foreground="White" BorderBrush="Black" BorderThickness="2" FontSize="14" FontWeight="Bold" Cursor="Hand"/>
+            <Button x:Name="btnIzmeni" Content="Izmeni" Width="120" Click="btnIzmeni_Click" Background="DarkBlue" Foreground="White" BorderBrush="Black" BorderThickness="2" FontSize="14" FontWeight="Bold" Cursor="Hand"/>
+            <Button x:Name="btnObrisi" Content="Obriši" Width="120" Click="btnObrisi_Click" Background="DarkBlue" Foreground="White" BorderBrush="Black" BorderThickness="2" FontSize="14" FontWeight="Bold" Cursor="Hand"/>
+            </StackPanel>
+        
+        </Grid>
+
+  
+</Window>

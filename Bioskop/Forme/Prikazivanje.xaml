@@ -1,0 +1,24 @@
+﻿<Window x:Class="Bioskop.Prikazivanje"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bioskop"
+        mc:Ignorable="d"
+        Title="Prikazivanje" Height="300" Width="450">
+    <Grid x:Name="frmPrikazivanje">
+        <Grid.Background>
+            <ImageBrush Stretch="None" ImageSource="C:\Users\Marko\Desktop\pozadinaZaposleniii.jpg" AlignmentY="Center" AlignmentX="Right"/>
+
+        </Grid.Background>
+        <Image Source="C:\Users\Marko\Desktop\pozadinaPrikazivanje.png" Margin="183,61,-11,150" Opacity="0.8"/>
+        <Label x:Name="lblTipPrikazivanja" FontWeight="Bold" Foreground="DarkBlue" Content="Tip prikazivanja:&#xD;&#xA;" HorizontalAlignment="Left" Margin="5,46,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblDatum" Content="Datum:&#xA;" FontWeight="Bold" Foreground="DarkBlue" HorizontalAlignment="Left" Margin="56,118,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtTipPrikazivanja" HorizontalAlignment="Left" Foreground="DarkBlue" BorderBrush="Black" BorderThickness="1" Background="LightGray" Margin="105,52,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="178" TextChanged="txtTipPrikazivanja_TextChanged" Height="18"/>
+        <DatePicker x:Name="dpVreme" Foreground="DarkBlue" BorderBrush="Black" BorderThickness="1" Background="LightGray" HorizontalAlignment="Left" Margin="105,121,0,0" VerticalAlignment="Top" Width="178"/>
+        <Button x:Name="btnSacuvaj" Content="Sacuvaj&#xD;&#xA;" HorizontalAlignment="Left" Margin="56,194,0,0" VerticalAlignment="Top" Click="btnSacuvaj_Click" Width="80" Height="25" FontSize="15"  FontWeight="Bold"/>
+        <Button x:Name="btnOtkazi" Content="Otkazi&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="203,194,0,0" VerticalAlignment="Top" Width="80" Height="25" FontSize="15" FontWeight="Bold" Click="btnOtkazi_Click"/>
+
+
+    </Grid>
+</Window>

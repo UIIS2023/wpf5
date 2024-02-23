@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Forme\Film.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forme\Gledalac.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forme\Grickalice.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forme\Karta.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forme\Prikazivanje.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forme\Projekcija.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forme\RezervacijaMesta.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forme\Sala.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forme\Zaposleni.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Forme\Film.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forme\Gledalac.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forme\Grickalice.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forme\Karta.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forme\RezervacijaMesta.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forme\Prikazivanje.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forme\Projekcija.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forme\Sala.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forme\Zaposleni.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
